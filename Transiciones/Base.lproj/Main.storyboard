@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View Controller 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I7b-PD-e6O">
+                                <rect key="frame" x="78" y="271" width="164" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kkc-EN-Hct">
+                                <rect key="frame" x="221" y="518" width="83" height="30"/>
+                                <state key="normal" title="Transicion 3">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="uQE-Fr-GoU" kind="modal" identifier="transicion3" id="0am-J4-qXV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cjA-28-FXu">
+                                <rect key="frame" x="16" y="518" width="83" height="30"/>
+                                <state key="normal" title="Transicion 1">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="uQE-Fr-GoU" kind="modal" identifier="transicion1" id="ayG-QM-if3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gk-Ni-j7b">
+                                <rect key="frame" x="119" y="518" width="83" height="30"/>
+                                <state key="normal" title="Transicion 2">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="uQE-Fr-GoU" kind="modal" identifier="transicion2" id="LVZ-7T-0gU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.17904955513530696" green="1" blue="0.21941008485980629" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="3gk-Ni-j7b" secondAttribute="centerX" id="7Hw-Ev-RqN"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kkc-EN-Hct" secondAttribute="bottom" constant="20" id="9pR-hd-7xa"/>
+                            <constraint firstItem="cjA-28-FXu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ASQ-Tg-gdu"/>
+                            <constraint firstAttribute="centerX" secondItem="I7b-PD-e6O" secondAttribute="centerX" id="Bd9-bZ-6WO"/>
+                            <constraint firstAttribute="centerX" secondItem="3gk-Ni-j7b" secondAttribute="centerX" id="SSX-FN-baS"/>
+                            <constraint firstAttribute="centerY" secondItem="I7b-PD-e6O" secondAttribute="centerY" id="hH3-78-rba"/>
+                            <constraint firstItem="kkc-EN-Hct" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="kaI-wj-j4g"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cjA-28-FXu" secondAttribute="bottom" constant="20" id="o4R-A8-UkB"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="3gk-Ni-j7b" secondAttribute="bottom" constant="20" id="oAf-FT-PUF"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="87" y="330"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="aIK-0p-IgQ">
+            <objects>
+                <viewController id="uQE-Fr-GoU" customClass="SecondViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SUA-hT-Qwp"/>
+                        <viewControllerLayoutGuide type="bottom" id="qua-O6-h4a"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="P8h-0t-rR4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="View Controller 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AYq-uL-eVg">
+                                <rect key="frame" x="75" y="260" width="171" height="47"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0RD-5G-v4V">
+                                <rect key="frame" x="139" y="518" width="42" height="30"/>
+                                <state key="normal" title="Volver">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="close:" destination="uQE-Fr-GoU" eventType="touchUpInside" id="oaJ-V6-BB2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.91615106313582684" blue="0.18257519167013614" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="qua-O6-h4a" firstAttribute="top" secondItem="0RD-5G-v4V" secondAttribute="bottom" constant="20" id="0NB-5T-vqD"/>
+                            <constraint firstAttribute="centerX" secondItem="0RD-5G-v4V" secondAttribute="centerX" id="J9R-8N-ADz"/>
+                            <constraint firstAttribute="centerX" secondItem="AYq-uL-eVg" secondAttribute="centerX" id="aKd-eM-5ez"/>
+                            <constraint firstAttribute="centerY" secondItem="AYq-uL-eVg" secondAttribute="centerY" id="tMf-Fz-XZH"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rq9-Kv-1aC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="516" y="330"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="ayG-QM-if3"/>
+    </inferredMetricsTieBreakers>
+</document>
